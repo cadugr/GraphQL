@@ -1,0 +1,12 @@
+package graph
+
+import "github.com/cadugr/GraphQL/internal/database"
+
+// This file will not be regenerated automatically.
+//
+// It serves as dependency injection for your app, add any dependencies you require here.
+
+type Resolver struct {
+	CategoryDB *database.Category // Estamos injetando a dependência para acessar os métodos de banco de dados de Categoria
+	CourseDB   *database.Course
+}
